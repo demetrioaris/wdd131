@@ -26,16 +26,6 @@
 
 /* general */
 
-.content {
-    max-width: 100%; /*1200px*/
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr; 
-    grid-template-rows: auto 1fr auto; 
-    gap: 20px;
-
-}
-
 
 body {
     background-color: white;
@@ -44,10 +34,10 @@ body {
     padding: 0;
 }
 
-h1,
-h3,
-h4 {
+h1 {
     font-family: var(--heading-font);
+    margin: 0;
+    padding: 0 ;
 }
 
 p {
@@ -57,24 +47,31 @@ p {
 
 /*Header*/
 header {
-    grid-column: 1 / 3;
-    grid-row: 1; 
     display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows:1fr auto; 
-    font-family: var(--heading-font);
-}
-
-header {
-    justify-content: space-between;
-    align-items: center;
-    
+    grid-template-columns: auto; 
+    grid-template-rows: auto ; 
 }
 
 header h1 {
     grid-column: 1;
     grid-row: 1;
-    text-align: left;
+}
+
+header h1 {
+    background-color: var(--accent3-color);
+    padding: 1em;
+    text-align: center;
+    font-size: 26px;
+}
+
+header h1 span{
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
+header h1 span:hover {
+    color: var(--secondary-color); /* Color del texto del span cuando se pasa el cursor por encima */
+    font-weight: 500;
+    transform: scale(1.2);
 }
 
 nav {
@@ -83,18 +80,18 @@ nav {
     grid-row: 2;
     background-color: var(--nav-background-color);
 	padding: 20px;
-	
 }
 
 nav {
-	list-style: none;
+    list-style: none;
 	display: flex;
-	background-color: var(--nav-background-color);
 	align-items: center;
 }
 
+
 nav a {
-	display: block;
+    display: block;
+    font-family: var(--heading-font);
 	color: var(--nav-link-color);
 	padding: 0.75rem;
 	text-decoration: none;
@@ -107,7 +104,7 @@ nav a {
 }
 
 nav a:hover {
-	font-weight: 700;
+	font-weight: 500;
 	text-decoration: underline;
     background-color: var(--nav-hover-background-color);
     color: var(--nav-hover-link-color);
@@ -116,17 +113,10 @@ nav a:hover {
 
 /*Main content */
 main {
-    grid-column: 1 / 2;
-    grid-row: 2; 
-    padding: 20px;
-    background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: auto 1fr;
 }
-aside {
-    grid-column: 2 / 3;
-    grid-row: 2;  
-    padding: 20px;
-    background-color: var(--accent2-color);
-}
+
 footer {
     grid-column: 1 / 3;
     grid-row: 3;  
