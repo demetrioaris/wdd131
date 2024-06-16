@@ -43,6 +43,7 @@ h1, h2 {
 p {
     font-family: var(--paragraph-font);
     padding: 1em;
+    text-align: left;
 }
 
 /*Header*/
