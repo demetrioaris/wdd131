@@ -43,7 +43,7 @@ h1, h2 {
 p {
     font-family: var(--paragraph-font);
     padding: 1em;
-    text-align: left;
+    
 }
 
 /*Header*/
@@ -60,6 +60,7 @@ header h1 {
 
 header h1 {
     background-color: var(--accent3-color);
+    color: var(--headline-color-on-white);
     padding: 1em;
     text-align: center;
     font-size: 26px;
@@ -145,6 +146,7 @@ main {
 grid-column:  1;
 color: var(--paragraph-color-on-white);
 margin: auto;
+text-align: left;
 }
 .story img {
     grid-column: 2;
@@ -182,6 +184,7 @@ margin: auto;
     grid-row: 2;
     color: var(--paragraph-color-on-white);
     margin: auto;
+    text-align: left;
 }
 .card-02 {
     display: grid;
