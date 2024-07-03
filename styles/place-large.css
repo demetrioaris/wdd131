@@ -62,6 +62,10 @@
         display: inline;
     }
 
+    .weather-icon::after {
+        content: "";
+    }
+
     .weather img {
         display: none;
     }
