@@ -1,12 +1,14 @@
+
+// Header hambuger button secction
 document.addEventListener('DOMContentLoaded', () => {
     const hamButton = document.querySelector('#menu');
     const navigation = document.querySelector('.navigation');
-    const nameHeader = document.querySelector('.nameHeader'); // Select the h1 element
+    const nameHeader = document.querySelector('.nameHeader');
 
     hamButton.addEventListener('click', () => {
         navigation.classList.toggle('open');
         hamButton.classList.toggle('open');
-        nameHeader.classList.toggle('hidden'); // Toggle the 'hidden' class
+        nameHeader.classList.toggle('hidden');
     });
 });
 
@@ -19,7 +21,7 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
         width: "400px",
-        height: "250px" 
+        height: "250px"
     },
     {
         templeName: "Manti Utah",
@@ -83,8 +85,8 @@ const temples = [
     },
     // Add more temple objects here...
     {
-        templeName: "Panama City Panama",
-        location: "Corozal, Ancon, Panamá, Panama",
+        templeName: "Panamá City Panamá",
+        location: "Ancon, Panamá, Panama",
         dedicated: "2008, August, 10",
         area: 18943,
         imageUrl:
@@ -174,7 +176,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Display all temples on initial load
     filterTemples('home-nav');
 });
 

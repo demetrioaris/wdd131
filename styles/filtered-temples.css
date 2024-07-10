@@ -44,26 +44,12 @@ body {
 
 
 /* mobile **************************/
-h1,
-h2 {
-    font-family: var(--heading-font);
-    margin: 0;
-    padding: 0;
-}
-
-
-p {
-    font-family: var(--paragraph-font);
-    margin: 0;
-    padding: 0;
-}
 
 header {
     background-color: var(--nav-background-color);
     padding: 10px;
     color: var(--headline-color-on-color);
 }
-
 
 header h1 {
     margin: auto 5px;
@@ -92,6 +78,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     list-style: none;
+    width: 100%;
 }
 
 .navigation a {
@@ -99,18 +86,16 @@ header h1 {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 16px;
     color: var(--nav-link-color);
-    width: 100%;
+
 }
 
 .navigation a:hover {
     color: var(--accent3-color-Platinum);
     text-decoration: underline 2px solid var(--accent3-color-Platinum);
     transition: all 5ms ease-in-out;
-
 }
-
 
 .open a {
     display: block;
@@ -120,14 +105,13 @@ header h1 {
     display: none;
 }
 
+
 /* main */
 
 main {
     margin: 1rem auto;
     max-width: 730px;
 }
-
-
 
 .home {
     border-bottom: 1px solid var(--headline-color-on-white);
@@ -141,8 +125,8 @@ main {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-gap: 20px;
     place-items: center;
     margin: 5px 20px;
 }
@@ -153,14 +137,17 @@ img {
 }
 
 .temple-card {
+    max-width: 300px;
+    height: 330px;
+    background-color: var(--accent3-color-Platinum);
+}
+
+.temple-card {
     border: 1px solid #778DA9;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px #0d1b2ac2;
-    max-width: 250px;
-    height: 300px;
     margin-bottom: 30px;
-    background-color: var(--accent3-color-Platinum);
 }
 
 .temple-card img {
@@ -170,24 +157,22 @@ img {
 
 .temple-info {
     margin-top: 10px;
-
 }
 
 .temple-info h2 {
     font-size: 16px;
-    color: var(--headline-color-on-white);
+    color: var(--secondary-color-Oxford-Blue);
 }
 
 .temple-info p {
     font-size: 12px;
-    color: var(--headline-color-on-white);
+    color: var(--accent1-color-YInMn-Blue);
     padding: 5px;
 }
 
 .temple-info strong {
     color: var(--headline-color-on-white);
 }
-
 
 
 /* Footer */
@@ -197,4 +182,8 @@ footer {
     color: var(--headline-color-on-color);
     text-align: center;
     padding: 1rem;
+}
+
+footer p {
+    font-size: 16px;
 }
