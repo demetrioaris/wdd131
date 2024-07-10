@@ -52,6 +52,7 @@ header {
 }
 
 header h1 {
+    width: 190px;
     margin: auto 5px;
     font-size: 20px;
 }
@@ -131,10 +132,7 @@ main {
     margin: 5px 20px;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
+
 
 .temple-card {
     max-width: 300px;
@@ -153,6 +151,7 @@ img {
 .temple-card img {
     width: 100%;
     border-radius: 5px;
+    height: auto;
 }
 
 .temple-info {
