@@ -25,6 +25,10 @@ body {
 }
 
 h2 {
+    color: var(--penn-blue);
+}
+
+p {
     color: var(--oxford-blue);
 }
 
