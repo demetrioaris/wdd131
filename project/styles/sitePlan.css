@@ -53,3 +53,7 @@ h2 {
     color: var(--white);
     text-align: center;
 }
+
+img {
+    width: 25%;
+}
