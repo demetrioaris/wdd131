@@ -21,16 +21,16 @@
         <h1 class="nameHeader">Product Review</h1>
     </header>
     <main>
-        <form method="get" action="/review.html">
+        <form method="get" action="review.html">
             <!-- Product Name -->
-            <label>Product Name</label>
+            <label for="product-name">Product Name</label>
             <select id="product-name" name="product-name" required aria-label="Product Name">
                 <option value="" disabled selected>Select a Product ...</option>
             </select>
 
             <!-- Overall Rating -->
             <div class="form-group">
-                <label for="overall-rating">Overall Rating</label>
+                <label>Overall Rating</label>
                 <div class="rating-box" id="overall-rating">
                     <p class="clasificacion">
                         <input id="radio1" type="radio" name="estrellas" value="5" required><label
