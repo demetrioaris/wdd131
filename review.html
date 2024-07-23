@@ -20,6 +20,9 @@
             }
 
             let reviewCount = parseInt(localStorage.getItem('reviewCount'));
+            reviewCount += 1;
+            localStorage.setItem('reviewCount', reviewCount);
+
             const reviewCountElement = document.getElementById('review-count');
             if (reviewCountElement) {
                 reviewCountElement.textContent = `Number of reviews completed: ${reviewCount}`;

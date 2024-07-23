@@ -31,16 +31,5 @@ document.addEventListener('DOMContentLoaded', function () {
     if (lastModifiedElement) {
         lastModifiedElement.textContent = `Last update: ${lastModified}`;
     }
-
-    // Check if the current page is review.html
-    if (window.location.pathname.endsWith('review.html')) {
-        let reviewCount = parseInt(localStorage.getItem('reviewCount'));
-        reviewCount += 1;
-        localStorage.setItem('reviewCount', reviewCount);
-
-        const reviewCountElement = document.getElementById('review-count');
-        if (reviewCountElement) {
-            reviewCountElement.textContent = `Number of reviews completed: ${reviewCount}`;
-        }
-    }
 });
+
