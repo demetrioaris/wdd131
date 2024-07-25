@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const socialContent = `
         <a href="https://github.com/demetrioaris" target="_blank" title="GitHub"><img
-                class="icon github-logo" src="../images/logos/github-mark-white.png"
+                class="icon github-logo" src="../project/images/logos/github-mark-white.png"
                 alt="GitHub icon" /></a>
         <a href="https://x.com/demetrio_aris" target="_blank" title="X"><img class="icon x-logo"
-                src="../images/logos/logo-x-version-white.png" alt="X logo" /></a>
+                src="../project/images/logos/logo-x-version-white.png" alt="X logo" /></a>
         <a href="https://www.linkedin.com/in/demetrio-aris" target="_blank" title="LinkedIn"><img
-                class="icon linkedin-logo" src="../images/logos/linkedin-logo-white.png"
+                class="icon linkedin-logo" src="../project/images/logos/linkedin-logo-white.png"
                 alt="LinkedIn icon" /></a>
     `;
 
