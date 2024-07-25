@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
+            e.preventDefault();
             navLinks.forEach(nav => nav.classList.remove('active'));
             e.target.classList.add('active');
         });
