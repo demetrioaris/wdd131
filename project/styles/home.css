@@ -1,0 +1,312 @@
+/* Main*/
+
+
+
+.containter {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(4, auto);
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+/* intro-box */
+
+.intro-box {
+    grid-row: 1;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr auto 2fr;
+    grid-template-rows: 1fr auto 1fr;
+    margin-top: 0;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    z-index: -1;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    mask-image: linear-gradient(var(--alice-blue) 75%,
+            transparent);
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cool-gray);
+    mix-blend-mode: multiply; /* or another blend mode */
+    pointer-events: none;
+    z-index: 1; /* Ensure it's above the image */
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 0; /* Ensure it's below the overlay */
+}
+
+.intro-msg {
+    text-align: left;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    color: var(--alice-blue);
+    padding: 20px 30px;
+    border-radius: 5%;
+}
+
+.intro-msg {
+    background-color:rgba(0, 18, 51, 0.522);
+    width: 500px;
+    z-index: 0;
+    font-weight: bold;
+}
+
+.intro-msg h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.intro-msg h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding: 0;
+    font-weight: bold;
+}
+
+.intro-msg p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+
+}
+
+.intro-msg .icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.intro-msg .icon:hover {
+    transform: scale(1.1);
+}
+
+/* Personal box */
+.personal-box {
+    grid-column: 2/3;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr; /* Change to single column layout */
+    grid-template-rows: auto auto auto; /* Adjust rows to auto */
+    gap: 20px; /* Add gap between sections */
+    padding: 20px;
+    background-color: #f8f9fa; /* Add background color for better contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* General styles for h2 elements */
+.personal-box h2, .personal-box h1 {
+    font-family: var(--heading-font); /* Ensure consistent heading font */
+    color: var(--b-on-color); /* Use a color from your palette */
+    margin-bottom: 10px; /* Spacing below headings */
+}
+
+/* Paragraph styles for about-myself and education */
+.about-myself p, .education p {
+    text-align: left;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    line-height: 1.6; /* Improve readability with line height */
+}
+
+/* Specific styles for about-myself */
+.about-myself {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific styles for education */
+.education {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific styles for skills */
+.skills {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Tool box styling */
+.tool-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.tools-icon {
+    width: auto;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.tools-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Contact button styling */
+.button-contact {
+    margin-top: 20px;
+}
+
+.contact {
+    background-color: var(--b-on-color);
+    color: var(--alice-blue);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.contact:hover {
+    background-color: var(--b-strong-color);
+    color: var(--alice-blue);
+    text-decoration: underline;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+/* Values box */
+.values-box {
+    grid-row: 3;
+    grid-column: 2/3;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.values-box h2 {
+    font-family: var(--heading-font);
+    color: var(--b-on-color);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Values grid */
+.values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Value item styling */
+.value-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+}
+
+.value-item:hover {
+    transform: translateY(-5px); /* Lift up on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.value-item h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: var(--b-on-color); /* Use a color from your palette */
+}
+
+.value-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 1.6; /* Improve readability with line height */
+}
+
+.value-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.value-item img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Invitation box */
+.invitation-box {
+    grid-row: 4;
+    grid-column: 2/3;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    margin-top: 20px; /* Add margin to separate from previous section */
+}
+
+.invitation-box p {
+    font-size: 1.3rem;
+    color: var(--b-on-color); /* Use a color from your palette */
+    margin-bottom: 20px; /* Add margin below the text */
+    line-height: 1.6; /* Improve readability with line height */
+}
+
+/* Contact button styling */
+.button-contact {
+    margin-top: 20px;
+}
+
+.contact {
+    background-color: var(--b-on-color);
+    color: var(--alice-blue);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for hover effects */
+}
+
+.contact:hover {
+    background-color: var(--b-strong-color);
+    transform: translateY(-2px); /* Slightly lift the button on hover */
+    text-decoration: underline;
+}
