@@ -1,23 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.getElementById('menu');
     const navigation = document.querySelector('.navigation');
-
-    menuButton.addEventListener('click', () => {
-        menuButton.classList.toggle('open');
-        navigation.classList.toggle('open');
-    });
-
-
-    const navLinks = document.querySelectorAll('.navigation a');
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            navLinks.forEach(nav => nav.classList.remove('active'));
-            e.target.classList.add('active');
-        });
-    });
-
     const socialContent = `
         <a href="https://github.com/demetrioaris" target="_blank" title="GitHub"><img
                 class="icon github-logo" src="../project/images/logos/github-mark-white.png"
@@ -29,11 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 alt="LinkedIn icon" /></a>
     `;
 
+    menuButton.addEventListener('click', () => {
+        menuButton.classList.toggle('open');
+        navigation.classList.toggle('open');
+    });
+
     document.querySelectorAll('.intro-social, .social').forEach(div => {
         div.innerHTML = socialContent;
     });
 
     document.getElementById('currentyear').textContent = new Date().getFullYear();
-
     document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
 });
