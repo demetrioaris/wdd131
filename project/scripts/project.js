@@ -2,26 +2,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const projects = [
         {
             projectName: "WebPage Temple",
-            imageUrl: "./project/images/temple-project.png",
+            imageUrl: "../project/images/temple-project.png",
             width: "893px",
             height: "784px",
-            htmlLogo: "./project/images/logos/html-logo-s.png",
+            htmlLogo: "../project/images/logos/html-logo-s.png",
             altHtml: "HTML5 Logo",
-            cssLogo: "./project/images/logos/css-logo-s.png",
+            cssLogo: "../project/images/logos/css-logo-s.png",
             altCss: "CSS Logo",
-            jsLogo: "./project/images/JavaScript-logo.png",
+            jsLogo: "../project/images/JavaScript-logo.png",
             altJs: "JavaScript Logo"
         },
         {
             projectName: "WebPage Places",
-            imageUrl: "./project/images/place-project.png",
+            imageUrl: "../project/images/place-project.png",
             width: "765px",
             height: "601px",
-            htmlLogo: "./project/images/logos/html-logo-s.png",
+            htmlLogo: "../project/images/logos/html-logo-s.png",
             altHtml: "HTML5 Logo",
-            cssLogo: "./project/images/logos/css-logo-s.png",
+            cssLogo: "../project/images/logos/css-logo-s.png",
             altCss: "CSS Logo",
-            jsLogo: "./project/images/JavaScript-logo.png",
+            jsLogo: "../project/images/JavaScript-logo.png",
             altJs: "JavaScript Logo"
         }
     ];
