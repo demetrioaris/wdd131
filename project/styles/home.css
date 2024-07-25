@@ -122,7 +122,6 @@
 
 .personal-box h2,
 .personal-box h1 {
-    font-family: var(--heading-font);
     color: var(--b-on-color);
     margin-bottom: 10px;
 }
@@ -212,7 +211,6 @@
 }
 
 .values-box h2 {
-    font-family: var(--heading-font);
     color: var(--b-on-color);
     margin-bottom: 20px;
     font-size: 2rem;

@@ -31,9 +31,6 @@
     --lato-regular-font-weight: 400;
     --lato-regular-font-style: normal;
 
-    --heading-font: var(--lato-regular-font-family);
-    --paragraph-font: var(--barlow-regular-font-family);
-
     /* Backgroung color*/
     --b-on-white: var(--oxford-blue);
     --b-on-color: var(--indigo-dye);
@@ -60,12 +57,15 @@
 
 
 h1,
-h2 {
-    font-family: var(--heading-font);
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--lato-regular-font-family);
 }
 
 p {
-    font-family: var(--paragraph-font);
+    font-family: var(--barlow-regular-font-family);
 }
 
 /* Header */
@@ -136,7 +136,7 @@ main {
     border-radius: 5px;
     font-size: 1.3rem;
     color: var(--alice-blue);
-    font-family: var(--heading-font);
+    font-family: var(--lato-regular-font-family);
 }
 
 .navigation a.active {
