@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
             altHtml: "HTML5 Logo",
             cssLogo: "../project/images/logos/css-logo-s.png",
             altCss: "CSS Logo",
-            jsLogo: "../project/images/JavaScript-logo.png",
+            jsLogo: "../project/images/JavaScript-logo-s.png",
             altJs: "JavaScript Logo"
         },
         {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             altHtml: "HTML5 Logo",
             cssLogo: "../project/images/logos/css-logo-s.png",
             altCss: "CSS Logo",
-            jsLogo: "../project/images/JavaScript-logo.png",
+            jsLogo: "../project/images/JavaScript-logo-s.png",
             altJs: "JavaScript Logo"
         }
     ];
