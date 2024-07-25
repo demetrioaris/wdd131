@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const projects = [
         {
             projectName: "WebPage Temple",
@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
             cssLogo: "../project/images/logos/css-logo-s.png",
             altCss: "CSS Logo",
             jsLogo: "../project/images/logos/javaScript-logo-s.png",
-            altJs: "JavaScript Logo"
+            altJs: "JavaScript Logo",
+            projectDescription: "This webpage features an interactive section to filter and display information about various LDS temples around the world, with a responsive hamburger menu for easy navigation. Users can view details such as temple names, locations, dedication dates, and areas, complemented by images."
         },
         {
             projectName: "WebPage Places",
@@ -22,7 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
             cssLogo: "../project/images/logos/css-logo-s.png",
             altCss: "CSS Logo",
             jsLogo: "../project/images/logos/javaScript-logo-s.png",
-            altJs: "JavaScript Logo"
+            altJs: "JavaScript Logo",
+            projectDescription: "This section dynamically calculates and displays the wind chill factor based on static temperature and wind speed values. It enhances the weather information table, providing accurate and relevant details for the user's convenience."
         }
     ];
 
@@ -47,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         projectInfo.className = 'project-info';
 
         const projectDescription = document.createElement('p');
-        projectDescription.textContent = 'loremconsequatur animi sunt sequi natus. Fugit ullam adipisci, impedit tenetur ab officia nostrum nemo?';
+        projectDescription.textContent = project.projectDescription;
         projectInfo.appendChild(projectDescription);
 
         const logosDiv = document.createElement('div');
