@@ -7,10 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
         navigation.classList.toggle('open');
     });
 
+    // Select all <a> elements inside .navigation
+    const navLinks = document.querySelectorAll('.navigation a');
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
+            // Remove 'active' class from all links
             navLinks.forEach(nav => nav.classList.remove('active'));
+            // Add 'active' class to the clicked link
             e.target.classList.add('active');
         });
     });
@@ -30,9 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         div.innerHTML = socialContent;
     });
 
-
     document.getElementById('currentyear').textContent = new Date().getFullYear();
-
 
     document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
 });
