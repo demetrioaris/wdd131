@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Insertar contenido para about-myself si existe
+
     const aboutMyself = document.querySelector('.about-myself');
     if (aboutMyself) {
         const aboutMyselfContent = `
@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         aboutMyself.innerHTML = aboutMyselfContent;
     }
 
-    // Insertar contenido para education si existe
     const education = document.querySelector('.education');
     if (education) {
         const educationContent = `

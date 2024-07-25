@@ -49,16 +49,16 @@
     width: 100%;
     height: 100%;
     background-color: var(--cool-gray);
-    mix-blend-mode: multiply; /* or another blend mode */
+    mix-blend-mode: multiply;
     pointer-events: none;
-    z-index: 1; /* Ensure it's above the image */
+    z-index: 1;
 }
 
 .image-container img {
     display: block;
     width: 100%;
     height: auto;
-    z-index: 0; /* Ensure it's below the overlay */
+    z-index: 0;
 }
 
 .intro-msg {
@@ -71,7 +71,7 @@
 }
 
 .intro-msg {
-    background-color:rgba(0, 18, 51, 0.522);
+    background-color: rgba(0, 18, 51, 0.522);
     width: 500px;
     z-index: 0;
     font-weight: bold;
@@ -111,31 +111,31 @@
     grid-column: 2/3;
     grid-row: 2;
     display: grid;
-    grid-template-columns: 1fr; /* Change to single column layout */
-    grid-template-rows: auto auto auto; /* Adjust rows to auto */
-    gap: 20px; /* Add gap between sections */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
     padding: 20px;
-    background-color: #f8f9fa; /* Add background color for better contrast */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* General styles for h2 elements */
-.personal-box h2, .personal-box h1 {
-    font-family: var(--heading-font); /* Ensure consistent heading font */
-    color: var(--b-on-color); /* Use a color from your palette */
-    margin-bottom: 10px; /* Spacing below headings */
+.personal-box h2,
+.personal-box h1 {
+    font-family: var(--heading-font);
+    color: var(--b-on-color);
+    margin-bottom: 10px;
 }
 
-/* Paragraph styles for about-myself and education */
-.about-myself p, .education p {
+.about-myself p,
+.education p {
     text-align: left;
     font-size: 1.3rem;
     margin-bottom: 15px;
-    line-height: 1.6; /* Improve readability with line height */
+    line-height: 1.6;
 }
 
-/* Specific styles for about-myself */
+
 .about-myself {
     padding: 20px;
     background-color: #ffffff;
@@ -143,7 +143,6 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Specific styles for education */
 .education {
     padding: 20px;
     background-color: #ffffff;
@@ -151,7 +150,6 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Specific styles for skills */
 .skills {
     padding: 20px;
     background-color: #ffffff;
@@ -160,7 +158,7 @@
     text-align: center;
 }
 
-/* Tool box styling */
+
 .tool-box {
     display: flex;
     justify-content: center;
@@ -180,7 +178,6 @@
     transform: scale(1.1);
 }
 
-/* Contact button styling */
 .button-contact {
     margin-top: 20px;
 }
@@ -210,8 +207,8 @@
     text-align: center;
     padding: 20px;
     background-color: #f9f9f9;
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .values-box h2 {
@@ -229,7 +226,7 @@
     padding: 20px;
 }
 
-/* Value item styling */
+
 .value-item {
     background: #fff;
     border-radius: 8px;
@@ -237,25 +234,25 @@
     overflow: hidden;
     padding: 20px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .value-item:hover {
-    transform: translateY(-5px); /* Lift up on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .value-item h2 {
     margin-bottom: 10px;
     font-size: 1.5rem;
-    color: var(--b-on-color); /* Use a color from your palette */
+    color: var(--b-on-color);
 }
 
 .value-item p {
     font-size: 1rem;
     margin-bottom: 10px;
     text-align: left;
-    line-height: 1.6; /* Improve readability with line height */
+    line-height: 1.6;
 }
 
 .value-item img {
@@ -263,11 +260,11 @@
     height: auto;
     border-radius: 8px;
     margin-top: 10px;
-    transition: transform 0.3s ease; /* Add transition for hover effect */
+    transition: transform 0.3s ease;
 }
 
 .value-item img:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05);
 }
 
 /* Invitation box */
@@ -277,16 +274,16 @@
     text-align: center;
     padding: 20px;
     background-color: #f9f9f9;
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
-    margin-top: 20px; /* Add margin to separate from previous section */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
 .invitation-box p {
     font-size: 1.3rem;
-    color: var(--b-on-color); /* Use a color from your palette */
-    margin-bottom: 20px; /* Add margin below the text */
-    line-height: 1.6; /* Improve readability with line height */
+    color: var(--b-on-color);
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 /* Contact button styling */
@@ -302,11 +299,11 @@
     padding: 10px 20px;
     border-radius: 5px;
     display: inline-block;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for hover effects */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .contact:hover {
     background-color: var(--b-strong-color);
-    transform: translateY(-2px); /* Slightly lift the button on hover */
+    transform: translateY(-2px);
     text-decoration: underline;
 }

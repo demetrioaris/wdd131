@@ -1,15 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.getElementById('menu');
     const navigation = document.querySelector('.navigation');
-    const navLinks = document.querySelectorAll('.navigation a');
 
-    // Manejador de evento para el botón de menú
     menuButton.addEventListener('click', () => {
         menuButton.classList.toggle('open');
         navigation.classList.toggle('open');
     });
 
-    // Manejador de evento para los enlaces de navegación
+
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             navLinks.forEach(nav => nav.classList.remove('active'));
@@ -17,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Insertar contenido social
     const socialContent = `
         <a href="https://github.com/demetrioaris" target="_blank" title="GitHub"><img
                 class="icon github-logo" src="/project/images/logos/github-mark-white.png"
@@ -33,9 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
         div.innerHTML = socialContent;
     });
 
-    // Actualizar el año actual dinámicamente
+
     document.getElementById('currentyear').textContent = new Date().getFullYear();
 
-    // Actualizar la fecha de última modificación dinámicamente
+
     document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
 });

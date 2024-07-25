@@ -31,9 +31,7 @@
 
     .personal-box {
         grid-template-columns: repeat(3, 1fr);
-        /* 3 columns for larger view */
         grid-template-rows: none;
-        /* Adjust rows as needed */
         gap: 20px;
     }
 
@@ -55,7 +53,6 @@
 
     .values {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        /* Adjust columns for larger view */
         gap: 30px;
         padding: 20px;
     }
@@ -78,7 +75,6 @@
     .value-item h2 {
         margin-bottom: 10px;
         font-size: 1.75rem;
-        /* Larger font size for larger view */
         color: var(--b-on-color);
     }
 
