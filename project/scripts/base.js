@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 alt="GitHub icon" /></a>
         <a href="https://x.com/demetrio_aris" target="_blank" title="X"><img class="icon x-logo"
                 src="../project/images/logos/logo-x-version-white.png" alt="X logo" /></a>
-        <a href="https://www.linkedin.com/in/demetrio-aris" target="_blank" title="LinkedIn"><img
+        <a href="https://www.linkedin.com/in/d-aris" target="_blank" title="LinkedIn"><img
                 class="icon linkedin-logo" src="../project/images/logos/linkedin-logo-white.png"
                 alt="LinkedIn icon" /></a>
     `;
